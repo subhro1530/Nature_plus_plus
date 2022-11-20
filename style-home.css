@@ -13,6 +13,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 380;
     letter-spacing: 1px;
+    /* transition: 5s ease-in-out; */
 }
 /* Copy the navpar css as well */
 /* Navabar Beggining */
@@ -82,20 +83,28 @@
 /* Navbar End */
 
 .cont1{
+    display: none;
     display: flex;
     width: 100vw;
     position: relative;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 100px;
     text-align: center;
-    position: fixed;
     align-items: center;
     background-image: url("https://images.squarespace-cdn.com/content/v1/530e8d24e4b04fb5b2cdcbf1/1458588031072-SLVBBWLS5COSXLPOIUZS/SAO_0532-min.jpg?format=1500w");
     background-size: cover;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: relative;
+}
+body{
+    align-items: center;
 }
 .cont1 img{
     margin: 0 50px;
     width: 600px;
+    height: max-content;
     border-radius: 50px;
 }
 .cont1 span{
@@ -103,9 +112,47 @@
     width: 1000px;
     color: rgb(125, 253, 144);
 }
+.cont1 .incont{
+    display: flex;
+    margin: 20px 0px;
+    width: 1232px;
+}
 .cont1 span h2{
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 45px;
     font-weight: 400;
-    color: rgb(145, 255, 143);
+    color: rgb(3, 192, 0);
+}
+.cont1 span p{
+    margin-bottom: 20px;
+    color: rgb(146, 255, 144);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.enter{
+    /* padding: 50px 100px; */
+    border-radius: 50px;
+    margin-top: 50px;
+    z-index: 100;
+    position: relative;
+}
+.support{
+    width: 100vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 50px;
+}
+.support h2{
+    font-size: 40px;
+}
+.support h4{
+    margin-top: 40px;
+    font-size: 20px;
+}
+.support p{
+    padding: 10px 100px;
 }
