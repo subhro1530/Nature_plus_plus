@@ -17,6 +17,11 @@
 }
 /* Copy the navpar css as well */
 /* Navabar Beggining */
+
+body{
+    align-items: center;
+    background-image: linear-gradient(black,rgb(0, 200, 0),rgb(153, 255, 0));
+}
 .navbar{
     display: flex;
     padding: 5px;
@@ -97,10 +102,9 @@
     background-repeat: no-repeat;
     z-index: -1;
     position: relative;
+    box-shadow: 2px 5px 10px rgba(4, 59, 1, 0.8);
 }
-body{
-    align-items: center;
-}
+
 .cont1 img{
     margin: 0 50px;
     width: 600px;
@@ -121,20 +125,25 @@ body{
     margin-bottom: 20px;
     font-size: 45px;
     font-weight: 400;
-    color: rgb(3, 192, 0);
+    color: rgb(84, 255, 5);
 }
 .cont1 span p{
     margin-bottom: 20px;
-    color: rgb(146, 255, 144);
+    color: rgb(4, 255, 0);
     margin-left: 50px;
     margin-right: 50px;
 }
 .enter{
-    /* padding: 50px 100px; */
+    padding-top: 50px;
     border-radius: 50px;
     margin-top: 50px;
     z-index: 100;
     position: relative;
+    background-color: aliceblue;
+    border-radius: 50px;
+    z-index: -5;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .support{
     width: 100vw;
@@ -143,8 +152,6 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: aliceblue;
-    border-radius: 50px;
 }
 .support h2{
     font-size: 40px;
@@ -155,4 +162,113 @@ body{
 }
 .support p{
     padding: 10px 100px;
+}
+.enter .form{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+}
+.enter .form form{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    color: rgb(0, 57, 75);
+}
+.enter .form form input{
+    margin-bottom: 20px;
+    margin-left: 5px;
+    padding: 8px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid lightblue;
+    padding-left: 10px;
+    border-radius: 50px;
+}
+.enter .form form textarea{
+    background-color: transparent;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    padding: 5px;
+}
+.enter .form button{
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.enter .form button:hover{
+    opacity: .7;
+    color: grey;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image:linear-gradient(black,rgb(27, 135, 0));
+    color: white;
+    border-top: #222;
+    z-index: 10;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    font-size: 18px;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img {
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover, 
+footer a:hover {
+    color: #088178;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
 }
