@@ -13,15 +13,39 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 380;
     letter-spacing: 1px;
-    /* transition: 5s ease-in-out; */
 }
+
+body {
+    background-color: #daffd5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+#selected {
+    font-size: 22px;
+    opacity: .5;
+}
+
+html::-webkit-scrollbar {
+    width: 5px; 
+ }
+
+html::-webkit-scrollbar-track {
+  background-color: #daffd5;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(14, 71, 14);
+}
+
 /* Copy the navpar css as well */
 /* Navabar Beggining */
-
-body{
-    align-items: center;
-    background-image: linear-gradient(black,rgb(0, 200, 0),rgb(153, 255, 0));
-}
 .navbar{
     display: flex;
     padding: 5px;
@@ -30,16 +54,17 @@ body{
     position: fixed;
     z-index: +50;
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.3);
+    margin-top: -80px;
 }
 .navbar .logo{
+    cursor: pointer;
     margin-right: 20px;
     color: white;
     text-decoration: none;
     font-weight: 500;
     font-size: 35px;
     margin-left: 20px;
-    font-family: 'Sono', sans-serif;
-    cursor: pointer;
+    font-family: 'Sono', sans-serif;    
 }
 .navbar .right{
     display: flex;
@@ -66,7 +91,17 @@ body{
     text-decoration: none;
     transition: .2s ease-in-out;
 }
+.navbar .right .home{
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
 .navbar .right .docs:hover{
+    font-size: large;
+    opacity: .5;
+}
+.navbar .right .home:hover{
     font-size: large;
     opacity: .5;
 }
@@ -87,126 +122,65 @@ body{
 }
 /* Navbar End */
 
-.cont1{
-    display: none;
+.container {
+    margin-top: 80px;
     display: flex;
-    width: 100vw;
-    position: relative;
-    padding-top: 150px;
-    padding-bottom: 100px;
-    text-align: center;
     align-items: center;
-    background-image: url("https://images.squarespace-cdn.com/content/v1/530e8d24e4b04fb5b2cdcbf1/1458588031072-SLVBBWLS5COSXLPOIUZS/SAO_0532-min.jpg?format=1500w");
-    background-size: cover;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    z-index: -1;
-    position: relative;
-    box-shadow: 2px 5px 10px rgba(4, 59, 1, 0.8);
 }
 
-.cont1 img{
-    margin: 0 50px;
-    width: 600px;
-    height: max-content;
-    border-radius: 50px;
+/*Sidebar Start */
+.sidebar {
+    padding: 30px;
+    background-color: rgb(155, 248, 145);
+    height: ;
+    margin-bottom: auto;
+    color: rgb(0, 96, 0);
 }
-.cont1 span{
-    padding: 10px;
-    width: 1000px;
-    color: rgb(125, 253, 144);
-}
-.cont1 .incont{
-    display: flex;
-    margin: 20px 0px;
-    width: 1232px;
-}
-.cont1 span h2{
+
+.sidebar-header {
     margin-bottom: 20px;
-    font-size: 45px;
-    font-weight: 400;
-    color: rgb(84, 255, 5);
+    text-decoration: underline;
+    background-color: transparent;
 }
-.cont1 span p{
-    margin-bottom: 20px;
-    color: rgb(4, 255, 0);
-    margin-left: 50px;
-    margin-right: 50px;
+
+.sidebar-header h1 {
+    background-color: transparent;
 }
-.enter{
-    padding-top: 50px;
-    border-radius: 50px;
-    margin-top: 50px;
-    z-index: 100;
-    position: relative;
-    background-color: aliceblue;
-    border-radius: 50px;
-    z-index: -5;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.support{
-    width: 100vw;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.support h2{
-    font-size: 40px;
-}
-.support h4{
-    margin-top: 40px;
+
+.side-links {
     font-size: 20px;
-}
-.support p{
-    padding: 10px 100px;
-}
-.enter .form{
     display: flex;
-    justify-content: center;
-    width: 100vw;
-    align-items: center;
     flex-direction: column;
-}
-.enter .form form{
-    display: flex;
-    margin-top: 20px;
-    flex-direction: column;
-    color: rgb(0, 57, 75);
-}
-.enter .form form input{
-    margin-bottom: 20px;
-    margin-left: 5px;
-    padding: 8px;
-    font-size: 16px;
-    background-color: transparent;
-    border: 1px solid lightblue;
-    padding-left: 10px;
-    border-radius: 50px;
-}
-.enter .form form textarea{
-    background-color: transparent;
-    border: 1px solid lightblue;
-    border-radius: 10px;
-    padding: 5px;
-}
-.enter .form button{
-    color: white;
-    background-color: black;
-    padding: 5px 10px;
-    border: 1px solid black;
-    border-radius: 50px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    cursor: pointer;
-}
-.enter .form button:hover{
-    opacity: .7;
-    color: grey;
 }
 
+.link {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+    background-color: transparent;
+        transition:  0.5s ease-in-out;
+}
+
+.link:hover {
+    background-color: #a7ff9c;
+    opacity: .6;
+    font-weight: 500;
+
+}
+
+/* Side Bar End */
+
+.main-doc {
+    margin: 30px 20px 20px 40px;
+}
+
+.main-doc p {
+    margin: 8px 0px 20px 0px;
+    text-align: justify;
+}
+
+/* Footer Start */
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -272,3 +246,5 @@ footer .copyright {
     width: 100%;
     text-align: center;
 }
+
+/* Footer End */
