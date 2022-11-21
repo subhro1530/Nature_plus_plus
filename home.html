@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature++| Save the nature by supporting us</title>
-    <link rel="stylesheet" href="style-home.css">
+    <title>Nature++ | Save the nature by supporting us</title>
+    <link rel="stylesheet" href="style-home.css">    
+    <script type="module" src="./home.js"></script>
 </head>
 <body>
     <!-- Copy the navbar excluding the div cont1 for further projects -->
@@ -62,15 +63,14 @@
         </div>
         <div class="form">
             <form action="">
-                <p>Your Name:<input type="text" placeholder="Name"></p>
-                <p>Your Email:<input type="email" placeholder="Email id"></p>
-                <p>Your Phone No:<input type="text" placeholder="Phone number"></p>
-                <textarea placeholder="Enter your thoughts here..." cols="30" rows="10"></textarea>
+                <p>Your Name:<input id="name" type="text" placeholder="Name"></p>
+                <p>Your Email:<input id="email" type="email" placeholder="Email id"></p>
+                <p>Your Phone No:<input id="phone" type="text" placeholder="Phone number"></p>
+                <textarea id="thoughts" placeholder="Enter your thoughts here..." cols="30" rows="10"></textarea>
             </form>
-            <button>Submit</button>
+            <button id="submit">Submit</button>
         </div>
     </div>
-
 </body>
 <footer class="section-p1">
         <div class="col">
