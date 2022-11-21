@@ -21,6 +21,8 @@
 body{
     align-items: center;
     background-image: linear-gradient(black,rgb(0, 200, 0),rgb(153, 255, 0));
+    z-index: -5;
+    position: relative;
 }
 .navbar{
     display: flex;
@@ -175,6 +177,7 @@ body{
     margin-top: 20px;
     flex-direction: column;
     color: rgb(0, 57, 75);
+    z-index: 500;
 }
 .enter .form form input{
     margin-bottom: 20px;
@@ -200,7 +203,7 @@ body{
     border-radius: 50px;
     margin-top: 20px;
     margin-bottom: 30px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .enter .form button:hover{
     opacity: .7;
