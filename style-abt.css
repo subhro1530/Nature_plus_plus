@@ -190,6 +190,23 @@ body{
     color: green ;
     font-weight: 400;
 }
+.youtube{
+    display: flex;
+    width: 1400px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 50px;
+}
+.youtube p{
+    width: 500px;
+    padding: 50px;
+    font-size: 18px;
+}
+.youtube iframe{
+    border-radius: 20px;
+}
+
 /* Footer opens */
 footer {
     display: flex;
