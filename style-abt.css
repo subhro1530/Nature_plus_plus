@@ -30,6 +30,7 @@ body{
     position: fixed;
     z-index: +50;
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.3);
+    margin-top: -120px;
 }
 .navbar .logo{
     cursor: pointer;
@@ -86,3 +87,150 @@ body{
     margin-left: 10px;
 }
 /* Navbar End */
+
+/* Profiles container */
+.profiles{
+    margin-top: 120px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* flex-direction: column; */
+}
+.profiles .left{
+    display: flex;
+    width: 800px;
+    margin-top: -270px;
+    justify-content: start;
+    background-color: greenyellow;
+    padding: 25px;
+    color: rgb(0, 85, 0);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+} 
+.profiles .left img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid green;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.profiles .left .txts h2{
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.profiles .right{
+    display: flex;
+    margin-top: 270px;
+    width: 850px;
+    justify-content: end;
+    background-color: greenyellow;
+    padding: 25px;
+    color: rgb(0, 85, 0);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+} 
+.profiles .right img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid green;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.profiles .right .txts h2{
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+/* Profiles closes */
+.cont2{
+    text-align: center;
+    align-items: center;
+}
+.cont2 span img{
+    width: 900px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.cont2 span{
+    display: flex;
+    text-align: center;
+    padding: 0px 50px;
+    align-items: center;
+}
+.cont2 h2{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: green ;
+    font-weight: 400;
+}
+/* Footer opens */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image:linear-gradient(black,rgb(27, 135, 0));
+    color: white;
+    border-top: #222;
+    z-index: 10;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    font-size: 18px;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img {
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover, 
+footer a:hover {
+    color: #088178;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+/* Footer closes */
