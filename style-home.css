@@ -133,9 +133,13 @@ body{
 }
 .cont1 .incont{
     display: flex;
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
+    margin-left: 180px;
+    margin-top: 40px;
     width: 1232px;
+
 }
+
 .cont1 span h2{
     margin-bottom: 20px;
     font-size: 45px;
@@ -146,7 +150,9 @@ body{
     margin-bottom: 20px;
     color: rgb(4, 255, 0);
     margin-left: 50px;
-    margin-right: 50px;
+    /* margin-right: 50px; */
+    width: 714px;
+    margin-right: 0px;
 }
 .enter{
     padding-top: 50px;
