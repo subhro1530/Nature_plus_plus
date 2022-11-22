@@ -126,6 +126,7 @@ html::-webkit-scrollbar-thumb {
     margin-top: 80px;
     display: flex;
     align-items: center;
+    overflow-x: scroll;
 }
 
 /*Sidebar Start */
@@ -134,6 +135,7 @@ html::-webkit-scrollbar-thumb {
     background-color: rgb(155, 248, 145);
     margin-bottom: auto;
     color: rgb(0, 96, 0);
+    /* overflow-y: scroll; */
 }
 
 .sidebar-header {
@@ -167,7 +169,9 @@ html::-webkit-scrollbar-thumb {
     font-weight: 500;
 
 }
-
+.Introduction{
+    margin-top: 80px;
+}
 /* Side Bar End */
 
 .main-doc {
