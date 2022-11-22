@@ -177,6 +177,10 @@ body{
     margin: 20px;
     border-radius: 20px;
 }
+/* .cont2 span p{
+    display: flex;
+    flex-direction: column;
+} */
 .cont2 span{
     display: flex;
     text-align: center;
