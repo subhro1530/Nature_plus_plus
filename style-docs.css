@@ -174,6 +174,8 @@ html::-webkit-scrollbar-thumb {
 
 .main-doc {
     margin: 10px 20px 20px 40px;
+    overflow-x: scroll;
+height: 100vh;
 }
 
 .main-doc h1 {
