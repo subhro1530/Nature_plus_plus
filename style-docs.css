@@ -159,12 +159,10 @@ html::-webkit-scrollbar-thumb {
     color: black;
     border-bottom: 1px solid grey;
     padding: 10px;
-    background-color: transparent;
-        transition:  0.5s ease-in-out;
 }
 
 .link:hover {
-    background-color: #a7ff9c;
+    background-color: #daffd5;
     opacity: .6;
     font-weight: 500;
 
@@ -175,12 +173,20 @@ html::-webkit-scrollbar-thumb {
 /* Side Bar End */
 
 .main-doc {
-    margin: 30px 20px 20px 40px;
+    margin: 10px 20px 20px 40px;
+}
+
+.main-doc h1 {
+    margin: 20px 0px 8px 0px;
 }
 
 .main-doc p {
-    margin: 8px 0px 20px 0px;
+    margin: 0px 0px 15px 0px;
     text-align: justify;
+}
+
+.main-doc ul li {
+    margin: 0px 0px 15px 0px;
 }
 
 /* Footer Start */
