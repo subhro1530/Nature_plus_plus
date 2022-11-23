@@ -1,6 +1,6 @@
 NATURE++
 
-This has been a major step for us (Saptak and Shaswata) towards creating a beautiful API which not only renders knowledge but
+This has been a major step for us (Saptak and Shaswata) towards creating a beautiful project which not only renders knowledge but
 also various skills regarding the aspect. This website is a creation for the BITS Pilani Postman API Hackathon 2.0. Moreover
 we find it a pleasure to work for the BITS team in a group and we expect good responses from the viewers as well.
 
